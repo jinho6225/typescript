@@ -14,7 +14,9 @@ function calculate(operator:Operator, num1:number, num2:number):number {
         case 'divide':
             return num1 / num2
         case 'remainder':
-            return num1 % num2    
+            return num1 % num2
+        default:
+            throw new Error('unknown error');
     }
 
 }
