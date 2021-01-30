@@ -138,7 +138,6 @@
     }
   }
 
-
   // Favor COMPOSITION over inheritance
 
   const cheapMilkMaker = new CheapMilkSteamer();
