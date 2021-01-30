@@ -27,7 +27,6 @@ function move(direction: Direction) {
     }
 }
 
-
 console.log(position); // { x: 0, y: 0}
 move('up');
 console.log(position); // { x: 0, y: 1}
