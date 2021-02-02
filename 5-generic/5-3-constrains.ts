@@ -1,6 +1,5 @@
 interface Employee {
     pay(): void;
-
 }
 
 class FullTimeEmployee implements Employee {
@@ -35,3 +34,19 @@ bob.workPartTime();
 
 const ellieAfterPay = pay(ellie);
 const bobAfterPay = pay(bob)
+
+const obj = {
+    name: 'ellie',
+    age: 20
+};
+const obj2 = {
+    animal: '🐕‍',
+};
+
+console.log(getValue(obj, 'name')); // ellie
+console.log(getValue(obj, 'age')); // 20
+console.log(getValue(obj2, 'animal')); // 🐕
+
+function getValue<T, K extends keyof T>(obj: T, key: K): T[K] {
+    return obj[key];
+}
