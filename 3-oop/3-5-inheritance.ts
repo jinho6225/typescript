@@ -68,6 +68,7 @@
         }
         makeCoffee(shots: number): CoffeeCup {
             const coffee = super.makeCoffee(shots);
+            console.log(coffee, 'coffee')
             this.steamMilk();
             return {
                 ...coffee,
