@@ -66,7 +66,7 @@
     class AmateurUser {
         constructor(private machine: CoffeeMaker) {}
         makeCoffee() {
-            const coffee = this.machine.makeCoffee(2);
+            const coffee = this.machine.makeCoffee(2);            
             console.log(coffee)
         }
     }
