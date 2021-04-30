@@ -117,13 +117,5 @@
         }
     }
 
-    const machines = [
-        new CoffeeMachine(16),
-        new CaffeeLatteMachine(16, '1'),
-        new SweetCoffeeMaker(16),
-        new CoffeeMachine(16),
-        new CaffeeLatteMachine(16, '1'),
-        new SweetCoffeeMaker(16),
-    ]
-
+    
 }
