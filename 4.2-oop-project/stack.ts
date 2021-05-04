@@ -9,12 +9,14 @@ type SNode = {
     next?: SNode;
 }
 
-
 class StackC implements Stack {
-    size: number = 0;
-    head? = SNode;
+    private _size: number = 0;
+    head? : SNode;
     
-    constructor() {}
+    constructor(dcapacity: number) {}
+    get size() {
+        return this._size;
+    }
     push(val): void {
 
     }
@@ -24,3 +26,6 @@ class StackC implements Stack {
     }
 
 }
+
+const stack = new StackC(10)
+console.log(stack)
